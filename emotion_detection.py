@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.optimizers import Adam
-model = load_model("C:/Users/vishw/OneDrive/Desktop/Coding/New_folder/Emotion Detection/emotion_model.h5", compile=False)
+model = load_model(r"C:\Users\vishw\OneDrive\Desktop\Coding\New_folder\Python\Emotion_Detection\emotion_model.h5", compile=False)
 
 model.compile(optimizer=Adam(learning_rate=0.0001), loss="categorical_crossentropy", metrics=["accuracy"])
 
